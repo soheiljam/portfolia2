@@ -6,7 +6,6 @@
 
 body {
     background-color: rgb(31, 29, 29);
-    font-family: Arial, sans-serif;
 }
 // start nav 
 nav {
@@ -85,6 +84,27 @@ main {
             margin-top: 7px;
             color: aliceblue;
         }
+        h2 {
+            color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
+}
+@media(max-width:750px) {
+    nav {
+        width: 100%;
+        padding: 2px 30px;
+        a {
+            font-size: small;
+        }
+        .searchs {
+            font-size: small;
+            input {
+                width: 70px;
+            }
+        }
+    }
 }
