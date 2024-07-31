@@ -7,6 +7,7 @@
 body {
     background-color: rgb(31, 29, 29);
 }
+
 // start nav 
 nav {
     background-color: rgb(31, 32, 32);
@@ -61,10 +62,11 @@ nav {
             padding: 3px;
             border-radius: 20px;
             color: aliceblue;
-
+            outline: none;
         }
     }
 }
+
 // start main 
 main {
     .img {
@@ -72,6 +74,7 @@ main {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
         img {
             width: 170px;
             height: 170px;
@@ -79,29 +82,55 @@ main {
             margin-top: 100px;
             border-radius: 200px;
         }
+
         p {
-            display: flex;
-            margin-top: 7px;
-            color: aliceblue;
+            color: antiquewhite;
+            margin-top: 5px;
         }
-        h2 {
+
+
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 25px;
+
+        p {
+            font-size: x-large;
             color: aliceblue;
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
+        button {
+            background-color: rgb(17, 16, 16);
+            color: aliceblue;
+            padding: 7px;
+            margin-top: 7px;
+            border: none;
+            border-radius: 15px;
+        }
     }
 
+
 }
+
 @media(max-width:750px) {
     nav {
         width: 100%;
         padding: 2px 30px;
+
         a {
             font-size: small;
         }
+
         .searchs {
             font-size: small;
+
             input {
                 width: 70px;
             }

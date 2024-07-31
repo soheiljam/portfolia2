@@ -55,6 +55,7 @@ nav .searchs input {
   padding: 3px;
   border-radius: 20px;
   color: aliceblue;
+  outline: none;
 }
 
 main .img {
@@ -71,15 +72,30 @@ main .img img {
   border-radius: 200px;
 }
 main .img p {
-  display: flex;
-  margin-top: 7px;
-  color: aliceblue;
+  color: antiquewhite;
+  margin-top: 5px;
 }
-main .img h2 {
+main .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 25px;
+}
+main .button p {
+  font-size: x-large;
   color: aliceblue;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+main .button button {
+  background-color: rgb(17, 16, 16);
+  color: aliceblue;
+  padding: 7px;
+  margin-top: 7px;
+  border: none;
+  border-radius: 15px;
 }
 
 @media (max-width: 750px) {
