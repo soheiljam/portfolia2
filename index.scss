@@ -5,12 +5,15 @@
 }
 
 body {
-    background-color: rgb(31, 29, 29);
-}
+    background-image: url(./Assets/img/bachground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}  
 
 // start nav 
 nav {
-    background-color: rgb(31, 32, 32);
+    background-color: none;
     display: flex;
     justify-content: space-between;
     padding: 15px 60px;
@@ -59,11 +62,17 @@ nav {
         input {
             background-color: rgb(27, 24, 24);
             border: none;
-            padding: 3px;
+            padding: 2px;
+            width: 120px;
+            height: 25px;
             border-radius: 20px;
             color: aliceblue;
             outline: none;
         }
+    }
+    .menu {
+        color: aliceblue;
+        display: none;
     }
 }
 
@@ -77,14 +86,14 @@ main {
 
         img {
             width: 170px;
-            height: 170px;
+            height: 165px;
             display: flex;
             margin-top: 100px;
             border-radius: 200px;
         }
 
         p {
-            color: antiquewhite;
+            color: rgb(0, 0, 0);
             margin-top: 5px;
         }
 
@@ -100,7 +109,7 @@ main {
 
         p {
             font-size: x-large;
-            color: aliceblue;
+            color: rgb(8, 8, 8);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -111,18 +120,81 @@ main {
             color: aliceblue;
             padding: 7px;
             margin-top: 7px;
+            margin-bottom: 80px;
             border: none;
             border-radius: 15px;
         }
     }
 
+    .mainBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .box {
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(241, 243, 243);
+            flex-direction: column;
+            padding: 10px 5px; 
+            margin: 20px;
+            width: 260px;
+            border-radius: 10px;
+            img {
+                width: 150px;
+                height: 100px;
+                padding: 0;
+                border-radius: 5px;
+            }
+    
+            i {
+                display: flex;
+                width: 100%;
+            }
+
+            h2 {
+                display: flex;
+                width: 100%;
+            }
+        }
+    }
+
+ 
+
+
 
 }
 
+
+@media (max-width:1024px) {
+    nav {
+        padding: 2px 30px;
+        .links {
+            display: flex;
+        }
+
+        a {
+            font-size: small;
+        }
+
+        .searchs {
+            font-size: small;
+            margin-right: 7px;
+
+            input {
+                width: 70px;
+                padding: 1px;
+            }
+        }
+    }
+}
 @media(max-width:750px) {
     nav {
-        width: 100%;
         padding: 2px 30px;
+        .links {
+            display: none;
+        }
 
         a {
             font-size: small;
@@ -133,7 +205,12 @@ main {
 
             input {
                 width: 70px;
+                padding: 1px;
             }
+        }
+
+        .menu {
+        display: flex;
         }
     }
 }

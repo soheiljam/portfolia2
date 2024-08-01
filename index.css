@@ -5,11 +5,14 @@
 }
 
 body {
-  background-color: rgb(31, 29, 29);
+  background-image: url(./Assets/img/bachground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 nav {
-  background-color: rgb(31, 32, 32);
+  background-color: none;
   display: flex;
   justify-content: space-between;
   padding: 15px 60px;
@@ -52,10 +55,16 @@ nav .searchs i {
 nav .searchs input {
   background-color: rgb(27, 24, 24);
   border: none;
-  padding: 3px;
+  padding: 2px;
+  width: 120px;
+  height: 25px;
   border-radius: 20px;
   color: aliceblue;
   outline: none;
+}
+nav .menu {
+  color: aliceblue;
+  display: none;
 }
 
 main .img {
@@ -66,13 +75,13 @@ main .img {
 }
 main .img img {
   width: 170px;
-  height: 170px;
+  height: 165px;
   display: flex;
   margin-top: 100px;
   border-radius: 200px;
 }
 main .img p {
-  color: antiquewhite;
+  color: rgb(0, 0, 0);
   margin-top: 5px;
 }
 main .button {
@@ -84,7 +93,7 @@ main .button {
 }
 main .button p {
   font-size: x-large;
-  color: aliceblue;
+  color: rgb(8, 8, 8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,14 +103,67 @@ main .button button {
   color: aliceblue;
   padding: 7px;
   margin-top: 7px;
+  margin-bottom: 80px;
   border: none;
   border-radius: 15px;
 }
+main .mainBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .mainBox .box {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(241, 243, 243);
+  flex-direction: column;
+  padding: 10px 5px;
+  margin: 20px;
+  width: 260px;
+  border-radius: 10px;
+}
+main .mainBox .box img {
+  width: 150px;
+  height: 100px;
+  padding: 0;
+  border-radius: 5px;
+}
+main .mainBox .box i {
+  display: flex;
+  width: 100%;
+}
+main .mainBox .box h2 {
+  display: flex;
+  width: 100%;
+}
 
+@media (max-width: 1024px) {
+  nav {
+    padding: 2px 30px;
+  }
+  nav .links {
+    display: flex;
+  }
+  nav a {
+    font-size: small;
+  }
+  nav .searchs {
+    font-size: small;
+    margin-right: 7px;
+  }
+  nav .searchs input {
+    width: 70px;
+    padding: 1px;
+  }
+}
 @media (max-width: 750px) {
   nav {
-    width: 100%;
     padding: 2px 30px;
+  }
+  nav .links {
+    display: none;
   }
   nav a {
     font-size: small;
@@ -111,5 +173,9 @@ main .button button {
   }
   nav .searchs input {
     width: 70px;
+    padding: 1px;
+  }
+  nav .menu {
+    display: flex;
   }
 }/*# sourceMappingURL=index.css.map */
